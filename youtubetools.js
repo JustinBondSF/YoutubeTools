@@ -1,81 +1,82 @@
 // ==UserScript==
-// @name        youtube tools
+// @name        Youtube Tools
 // @namespace   Violentmonkey Scripts
 // @match       https://*.youtube.com/*
 // @grant       none
-// @version     1.0
-// @author      -
-// @description 4/28/2023, 8:18:35 AM
+// @version     1.5
+// @author      Nobody
+// @description 5/3/2023, 3:38:35 AM
 // ==/UserScript==
 
-// ==UserScript== dislikes, auto repeat vid
+// ==UserScript==
 // @name         Youtube Tools
 // @name:zh-TW   本地 YouTube 下載器
 // @name:zh-HK   本地 YouTube 下載器
 // @name:zh-CN   本地 YouTube 下载器
 // @name:ja      ローカル YouTube ダウンローダー
 // @name:kr      로컬 YouTube 다운로더
-// @name:ar      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:bg      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:cs      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:da      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:de      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:el      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:eo      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:es      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:fi      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:fr      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:fr-CA   Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:he      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:hu      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:id      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:it      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:ko      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:nb      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:nl      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:pl      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:pt-BR   Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:ro      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:ru      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:sk      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:sr      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:sv      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:th      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:tr      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:uk      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:ug      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @name:vi      Youtube Tools All in one local Download MP4, MP3 HIGT QUALITY without external service and more.
-// @description         Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:ar      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:bg      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:da      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:de      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:el      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:eo      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:fi      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:fr-CA   Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:he      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:hu      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:id      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:it      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:ko      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:nb      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:nl      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:pl      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:pt-BR   Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:ro      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:ru      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:sk      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:sr      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:sv      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:th      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:tr      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:uk      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:ug      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:vi      Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @homepage     https://github.com/DeveloperMDCM/
-// @version      1.7.1
-// @description        Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
+// @name:ar      Youtube Tools
+// @name:bg      Youtube Tools
+// @name:cs      Youtube Tools
+// @name:da      Youtube Tools
+// @name:de      Youtube Tools
+// @name:el      Youtube Tools
+// @name:eo      Youtube Tools
+// @name:es      Youtube Tools
+// @name:fi      Youtube Tools
+// @name:fr      Youtube Tools
+// @name:fr-CA   Youtube Tools
+// @name:he      Youtube Tools
+// @name:hu      Youtube Tools
+// @name:id      Youtube Tools
+// @name:it      Youtube Tools
+// @name:ko      Youtube Tools
+// @name:nb      Youtube Tools
+// @name:nl      Youtube Tools
+// @name:pl      Youtube Tools
+// @name:pt-BR   Youtube Tools
+// @name:ro      Youtube Tools
+// @name:ru      Youtube Tools
+// @name:sk      Youtube Tools
+// @name:sr      Youtube Tools
+// @name:sv      Youtube Tools
+// @name:th      Youtube Tools
+// @name:tr      Youtube Tools
+// @name:uk      Youtube Tools
+// @name:ug      Youtube Tools
+// @name:vi      Youtube Tools
+// @description         Youtube Tools
+// @description:ar      Youtube Tools
+// @description:bg      Youtube Tools
+// @description:da      Youtube Tools
+// @description:de      Youtube Tools
+// @description:el      Youtube Tools
+// @description:eo      Youtube Tools
+// @description:fi      Youtube Tools
+// @description:fr-CA   Youtube Tools
+// @description:he      Youtube Tools
+// @description:hu      Youtube Tools
+// @description:id      Youtube Tools
+// @description:it      Youtube Tools
+// @description:ko      Youtube Tools
+// @description:nb      Youtube Tools
+// @description:nl      Youtube Tools
+// @description:pl      Youtube Tools
+// @description:pt-BR   Youtube Tools
+// @description:ro      Youtube Tools
+// @description:ru      Youtube Tools
+// @description:sk      Youtube Tools
+// @description:sr      Youtube Tools
+// @description:sv      Youtube Tools
+// @description:th      Youtube Tools
+// @description:tr      Youtube Tools
+// @description:uk      Youtube Tools
+// @description:ug      Youtube Tools
+// @description:vi      Youtube Tools
+// @homepage
+//               https://github.com/justinbondsf/
+// @version      1.5
+// @description        Youtube Tools
 // @description:zh-TW  無需第三方服務即可下載 YouTube 視頻等。
 // @description:zh-HK  無需第三方服務即可下載 YouTube 視頻等
 // @description:zh-CN  无需通过第三方服务等即可下载 YouTube 视频
@@ -83,9 +84,9 @@
 // @description:kr     외부 서비스 등 없이 YouTube 동영상 다운로드
 // @description:fr     Obtenez un lien brut de YouTube sans service externe. et de plus
 // @description:cs     Stahujte videa z YouTube bez externích služeb. a více
-// @description:en     Download MP4, MP3 HIGT QUALITY without external services. and more
-// @description:es     Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @author       MDCM
+// @description:en     Download MP4, MP3 without without external services.
+// @description:es     Youtube Tools
+// @author       Nobody
 // @match        https://*.youtube.com/*
 // @exclude      *://music.youtube.com/*
 // @exclude      *://*.music.youtube.com/*
@@ -101,12 +102,12 @@
 // @compatible safari
 // @compatible edge
 // @license MIT
-// @namespace https://github.com/DeveloperMDCM/
+// @namespace https://github.com/justinbondsf
 // ==/UserScript==
 
 (function () {
-    // Youtube tools by: DeveloperMDCM
-    // https://github.com/DeveloperMDCM/Youtube-tools-extension
+    // Youtube tools by: justinbondsf
+    // https://github.com/justinbondsf/Youtubetools
 
     "use strict";
 
@@ -116,10 +117,10 @@
     }
 
     function loadScript() {
-        console.log("Scrip en ejecución by: DeveloperMDCM  MDCM");
+        console.log("Scrip en ejecución by:  Nobody Facelift by: Nobody ");
 
 
-        // alert('Script by: DeveloperMDCM', cat)
+        // alert('Script by: justinbondsf', cat)
         let ad = true;
         // Menu Buttons
         const menubuttons = `
@@ -128,10 +129,10 @@
             <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
             <meta http-equiv="Pragma" content="no-cache">
             <style>
-            .mdcm:hover {
+            .Nobody:hover {
               cursor: pointer;
             }
-            .mdcm{
+            .Nobody{
               font-size: 10px;
             }
             #subscribe-button > ytd-subscribe-button-renderer > yt-button-shape > button:hover {
@@ -151,8 +152,12 @@
               transform: translateY(4px);
 
               }
+              .active:hover{
+                 background-color: #eee;
+
+              }
                .containerButtons button:hover , input:hover{
-                 background-color: #eee}
+                 background-color: #999}
 
               .containerButtons button:active, input:active {
               background-color: #999;
@@ -163,6 +168,9 @@
                 background-color: #999;
               box-shadow: 0 3px #999
               transform: translateY(2px);
+              }
+              #repeatvideo:hover{
+                background-color: #999;
               }
 
             .containerButtons button , input , checkbox{
@@ -180,8 +188,8 @@
             .containerButtons h1, h2 {
               user-select: none;
             }
-            #MDCM {
-              animation: mdcm 10s infinite alternate;
+            #Nobody {
+              animation: Nobody 10s infinite alternate;
               position: relative;
               transition: 4s;
             }
@@ -254,7 +262,7 @@
             .qualityButton {
               width: 70px;
               height: 30px;
-              background-color: rgb(4, 156, 22);
+              background-color: rgb(25, 25, 112);
               border: 0px solid #000;
               color: #fff;
               font-size: 20px;
@@ -414,21 +422,22 @@
             <div class="containerButtons">
               <div style="position:relative; display:inline-block ">
 
-              <button type="button" class="btn btn-secondary"><img width="35" src="https://cdn-icons-png.flaticon.com/512/674/674468.png"><input id="color"  list="presetColors1" type="color" value="#ffffff" ></button></div>
-               <datalist id="presetColors1">
+              <button type="button" class="btn btn-secondary"><img width="35" src="https://cdn-icons-png.flaticon.com/512/51/51443.png">
+              <input id="color"  list="presetColors1" type="color" value="#ffffff" ></button></div>
+              <datalist id="presetColors1">
               <option value="#ff00aa"/>
               <option value="#fbff00"/>
               <option value="#ff0000"/>
               <option value="#00ff00"/>
               <option value="#0000ff"/>
               </datalist>
-              <button type="button"  id="image"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/3342/3342119.png"></button>
-              <button type="button"  id="invertir"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/556/556716.png"></button>
-              <button type="button"  id="background"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/4789/4789442.png"></button>
-              <button type="button"  id="reset"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/5632/5632370.png"></button>
+              <button type="button"  id="invertir"> <img width="35" src="https://cdn-icons-png.flaticon.com/128/9385/9385968.png"></button>
+              <button type="button"  id="background"> <img width="35" src="https://static.thenounproject.com/png/61592-200.png"></button>
+              <button type="button"  id="reset"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/9899/9899316.png"></button>
 
-              <div style="position:relative; display:inline-block ">
-              <button type="button"><img width="35" src="https://cdn-icons-png.flaticon.com/512/5946/5946143.png"><input id="eyes" list="presetColors" type="color" value="#ffffff" ></button>
+              <div style="position:relative; display:none ">
+              <button type="button" class="btn btn-secondary"><img width="35" src="https://cdn-icons-png.flaticon.com/512/5946/5946143.png">//
+              <input id="eyes" list="presetColors" type="color" value="#ffffff" ></button>
               <datalist id="presetColors">
               <option value="#000000"/>
               <option value="#fbff00"/>
@@ -438,9 +447,9 @@
               </datalist>
               </div>
               <button type="button"  id="repeatvideo"> <img class="imarepeat" width="35" src="https://cdn-icons-png.flaticon.com/512/32/32161.png"></button>
-              <button type="button"  class="btn1"> <img width="35" src="https://cdn3.iconfinder.com/data/icons/file-extension-10/512/mp4-file-extension-format-media-512.png"></button>
-              <button type="button"  class="btn2"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/136/136507.png"></button>
-                <button type="button"  class="btn3"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/1828/1828527.png"></button>
+              <button type="button"  class="btn1"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/1146/1146203.png"></button>
+              <button type="button"  class="btn2"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/1/1449.png"></button>
+              <button type="button"  class="btn3"> <img width="35" src="https://cdn-icons-png.flaticon.com/512/800/800878.png"></button>
               </div>
               <div>
               </div>
@@ -452,12 +461,12 @@
             <div class="containerAll">
             <select class="containerQuality  hideFrame" required>
               <option selected disabled>Video Codec/Quality</option>
-              <option value="360">360p Mp4</option>
-              <option value="480">480p Mp4</option>
-              <option value="720">720p HD Mp4 Default</option>
-              <option value="1080">1080p FULL HD Mp4</option>
-              <option value="4k">2160p 4K WEBM</option>
-              <option value="8k">4320p 8K WEBM</option>
+              <option value="360">360p</option>
+              <option value="480">480p</option>
+              <option value="720">720p</option>
+              <option value="1080">1080p</option>
+              <option value="4k">2160p 4K</option>
+              <option value="8k">4320p 8K</option>
               </select>
               <iframe id="downloading"  style="z-index: 99; border: none; height: 27.4px; width: 50%;"  class="containerAll hideFrame" src="" frameborder="0"></iframe>
             </div>
@@ -466,14 +475,14 @@
             <div class="containerAll">
             <select class="selectAudioQuality hideFrameAudio" required>
               <option selected disabled> Audio Codec/Quality</option>
-              <option value="flac">Audio FLAC UHQ</option>
-              <option value="wav">Audio WAV UHQ</option>
-              <option value="mp3">Audio MP3 Default</option>
-              <option value="m4a">Audio M4A</option>
-              <option value="aac">Audio AAC</option>
-              <option value="opus">Audio OPUS</option>
-              <option value="ogg">Audio OGG</option>
-              </select>
+              <option value="flac">FLAC UHQ</option>
+              <option value="wav">WAV UHQ</option>
+              <option value="mp3">MP3</option>
+              <option value="m4a">M4A</option>
+              <option value="aac">AAC</option>
+              <option value="opus">OPUS</option>
+              <option value="ogg">OGG</option>
+            </select>
               <iframe id="downloadingmp3"  style="z-index: 99; border: none; height: 27.4px; width: 50%;"  class="containerAll hideFrameAudio" src="" frameborder="0"></iframe>
             </div>
             </form>
@@ -486,8 +495,8 @@
 
 
 
-        const addDislike = document.createElement("P"); // Texto count dislikes
-        let validobuttons = true;
+        const addDislike = document.createElement("P"); // text count dislikes
+        let validbuttons = true;
         // TODO: Inicia y inserta los buttons
         setInterval(() => {
             // se repite  1 vez
@@ -495,8 +504,8 @@
 
 
             const addButton = document.querySelector(".style-scope .ytd-watch-metadata");
-            if (addButton != undefined && validobuttons) {
-                validobuttons = false;
+            if (addButton != undefined && validbuttons) {
+                validbuttons = false;
                 addButton.insertAdjacentHTML("beforebegin", menubuttons);
                 // document.querySelector("video").style.borderRadius = "30px";
                 // form de buttons para downloadr
@@ -522,7 +531,7 @@
                 });
 
                 selectAudioQuality.addEventListener("change", (e) => {
-                    framedownloadmp3.src = `https://loader.to/api/button/?url=${window.location.href}&f=${e.target.value}&color=049c16`;
+                    framedownloadmp3.src = `https://loader.to/api/button/?url=${window.location.href}&f=${e.target.value}&color=0af`;
                     // console.log(e.target.value)
                     framedownloadmp3.classList.remove("hideFrameAudio");
                 });
@@ -530,6 +539,8 @@
                 btn3cancel.onclick = () => {
                     downloadForm.style.display = "none";
                     downloadFormAudio.style.display = "none";
+                    btn2mp3.classList.remove("active");
+                    btn1mp4.classList.remove("active");
 
 
                 }
@@ -543,6 +554,13 @@
                     downloadFormAudio.classList.add("hideFrame");
                     downloadForm.reset();
 
+                      if (btn1mp4.classList.contains("active")){
+                        btn1mp4.classList.remove("active");
+                      } else {
+                        btn2mp3.classList.remove("active");
+                        btn1mp4.classList.add("active");
+                      }
+
                 };
                 btn2mp3.onclick = () => {
                     downloadFormAudio.classList.remove("hideFrame");
@@ -553,6 +571,13 @@
                     framedownloadmp3.classList.add("hideFrameAudio")
                     downloadFormAudio.reset();
 
+                  if (btn2mp3.classList.contains("active")){
+                        btn2mp3.classList.remove("active");
+                      } else {
+                        btn1mp4.classList.remove("active");
+                        btn2mp3.classList.add("active");
+                      }
+
                 };
 
                 const reverse = document.querySelector("#columns"); // Invertir contenido
@@ -562,7 +587,7 @@
                 const formButtons = document.querySelector("#eyes"); // Filtro de pantalla
                 const btnbackground = document.querySelector("#background"); // background cinematica completa
                 const invertirVista = document.querySelector("#invertir"); // Intercambiar vista
-
+                const active = document.querySelector(".active")
                 const buttonsVideo = document.querySelector(
                     "#top-row.ytd-watch-metadata"
                 ); // buttons para video
@@ -589,7 +614,7 @@
                 };
 
 
-                // valido modo oscuro y venta de video
+                // valid modo oscuro y venta de video
                 // Repeat video button
                 let countRepeat = 0; // count
                 const repeat = document.querySelector("#repeatvideo"); // Repeat button
@@ -599,6 +624,15 @@
                 repeat.onclick = () => {
                     if (document.querySelector("#cinematics > div") != undefined || videoFull != undefined) {
                         countRepeat += 1;
+                      loop.classList.remove("active")
+                      if (loop.classList.contains("active")){
+                        loop.classList.remove("active")
+                      } else {
+                        loop.classList.add("active")
+                      }
+
+
+
                         setInterval(() => {
                             const videoRepeat = document.querySelector("video");// vIDEO PLAYER
                             let aux = videoRepeat.duration - 2;
@@ -611,25 +645,27 @@
                                             buttonLeft.click();
 
                                         }
-                                        loop.classList.add("active")
-                                        imarepeat.src = "https://cdn-icons-png.flaticon.com/512/32/32161.png";// icon
-                                        // button pressed in, toggled
+
+                                      imarepeat.src = "https://cdn-icons-png.flaticon.com/512/32/32161.png";// icon
+
+                                      // button pressed in, toggled
+
 
                                     }
                                     break;
                                 case 2:
-                                    loop.classList.remove("active")
+                                     imarepeat.src = "https://cdn-icons-png.flaticon.com/512/32/32161.png";
+                                      loop.classList.remove("active")
                                     countRepeat = 0;
-                                    imarepeat.src = "https://cdn-icons-png.flaticon.com/512/32/32161.png";
 
-                                    //    repeat.style = "filter: brightness(100%);inset: inherit; size: 100%";
+                                //    repeat.style = "filter: brightness(100%);inset: inherit; size: 100%";
 
 
                                     break;
                             }
                         }, 1000);
                     } else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
                 };
                 // Background transparent
@@ -647,7 +683,7 @@
                     }
 
                     else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
                 };
 
@@ -668,7 +704,7 @@
                         document.body.style.setProperty("--yt-spec-general-background-a", "#000000");
                         document.querySelector("html[dark] [dark]").style.backgroundColor = "#000000";
                         document.querySelector("ytd-playlist-panel-renderer[modern-panels]:not([within-miniplayer]) #container.ytd-playlist-panel-renderer").style = "";
-
+                        document.querySelector(".active").classList.remove("")
 
                     } else if (document.querySelector("#cinematics > div") === null) {
                         document.body.style.setProperty("--yt-spec-text-primary", "#000");
@@ -677,10 +713,11 @@
                         document.querySelector("#ojosprotect").style.backgroundColor = "transparent";
                         document.querySelector("#logo-icon").style.color = "#000";
                         document.querySelector("ytd-playlist-panel-renderer[modern-panels]:not([within-miniplayer]) #container.ytd-playlist-panel-renderer").style = "";
+                        active.classList.remove("active");
                     }
 
                     else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
                 })
                 reverse.style.flexDirection = "row";
@@ -696,7 +733,7 @@
                             "height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes"
                         );
                     } else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
                 };
                 // Input color
@@ -714,7 +751,7 @@
                         document.querySelector("#subscribe-button > ytd-subscribe-button-renderer > yt-button-shape > button").style = "color: black; background-color: white; border: 2px solid black; ";
 
                     } else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
 
                 });
@@ -725,7 +762,7 @@
                         document.querySelector("#ojosprotect").style.backgroundColor =
                             formButtons.value;
                     } else {
-                        mostrarAlerta('Active Dark Theme in Youtube page')
+                        showAlert('Active Dark Theme in Youtube page')
                     }
                 });
 
@@ -739,45 +776,45 @@
         // Función para link github project
         const existeFormButton = document.querySelector("#below > ytd-watch-metadata > div.container > form");
 
-        function MDCM() {
+        function Nobody() {
             if (!existeFormButton) {
-                const mdcm = document.querySelector("#MDCM");
+                const Nobody = document.querySelector("#Nobody");
                 const sms = document.querySelector("#below > ytd-watch-metadata");
-                if (!mdcm) {
+                if (!Nobody) {
                     if (sms != undefined) {
-                        const mdcm = document.createElement("P");
-                        mdcm.innerHTML = '<a id="MDCM" target="_blank" style="margin: 10px 0; font-size: 14px; color: #24ff; text-decoration: none; display: flex; align-items: center; justify-content: center; font-style: italic;font-weight: 700;" href="https://github.com/DeveloperMDCM/Youtube-tools-extension">Link GitHub Repository<h4></h4</a>';
-                        sms.appendChild(mdcm);
+                        const Nobody = document.createElement("P");
+                        Nobody.innerHTML = '<a id="Nobody" target="_blank" style="margin: 10px 0; font-size: 14px; color: #24ff; text-decoration: none; display: flex; align-items: center; justify-content: center; font-style: italic;font-weight: 700;" href="https://github.com/justinbondsf/Youtubetools">GitHub Repository<h4></h4</a>';
+                        sms.appendChild(Nobody);
                     }
                 }
             }
         }
         // Función para adaptar dislikes
-        let validoUrl = document.location.href;
+        let validUrl = document.location.href;
         async function loadDislikes() {
             const enlace = paramsVideoURL();
-            validoUrl = document.location.href;
+            validUrl = document.location.href;
             const btnDislike = document.querySelector("#segmented-dislike-button yt-button-shape > button");
-            const validoVentana = document.querySelector("#below > ytd-watch-metadata > div.container > form > div.containerButtons");
-            const resultado = document.querySelector("#segmented-dislike-button > ytd-toggle-button-renderer > yt-button-shape > button > yt-touch-feedback-shape");
+            const validWindow = document.querySelector("#below > ytd-watch-metadata > div.container > form > div.containerButtons");
+            const result = document.querySelector("#segmented-dislike-button > ytd-toggle-button-renderer > yt-button-shape > button > yt-touch-feedback-shape");
             if (
-                validoUrl.split("/")[3] !== "shorts" &&
-                validoVentana != undefined &&
-                validoUrl != "https://www.youtube.com/"
+                validUrl.split("/")[3] !== "shorts" &&
+                validWindow != undefined &&
+                validUrl != "https://www.youtube.com/"
             ) {
                 const url = `https://returnyoutubedislikeapi.com/Votes?videoId=${enlace}`;
                 try {
                     const respuesta = await fetch(url);
-                    const datos = await respuesta.json();
+                    const data = await respuesta.json();
                     const {
                         dislikes,
                         dateCreated,
                         rating
-                    } = datos; // Objeto
-                    addDislike.textContent = `${FormatiarNumero(dislikes, 0)}`;
+                    } = data; // Objeto
+                    addDislike.textContent = `${FormatNumber(dislikes, 0)}`;
                     btnDislike.style = "width: 100px";
-                    resultado.style = "margin: 0 6px";
-                    resultado.insertAdjacentElement("afterend", addDislike);
+                    result.style = "margin: 0 6px";
+                    result.insertAdjacentElement("afterend", addDislike);
                     const iconLike = document.querySelector("#segmented-like-button > ytd-toggle-button-renderer > yt-button-shape > button > div.yt-spec-button-shape-next__icon > yt-icon > yt-animated-icon");
                     const inconDislike = document.querySelector("#segmented-dislike-button > ytd-toggle-button-renderer > yt-button-shape > button > div > yt-icon");
                     if (iconLike != undefined && iconLike != inconDislike) {
@@ -800,7 +837,7 @@
 
         }
         // Función para formatear los dislikes
-        function FormatiarNumero(num, digits) {
+        function FormatNumber(num, digits) {
             const lookup = [{
                 value: 1,
                 symbol: "",
@@ -826,26 +863,26 @@
                 "0";
         }
 
-        // Función para mostrar los dislikes en shorts
+        // Show the dislikes on YT shorts
         async function shortDislike() {
-            validoUrl = document.location.href;
-            const validoVentanaShort = document.querySelectorAll(
+            validUrl = document.location.href;
+            const validWindowShort = document.querySelectorAll(
                 "#dislike-button > yt-button-shape > label > div > span"
             );
             if (
-                validoVentanaShort != undefined &&
+                validWindowShort != undefined &&
                 document.location.href.split("/")[3] === "shorts"
             ) {
-                validoUrl = document.location.href.split("/")[4];
-                const urlShorts = `https://returnyoutubedislikeapi.com/Votes?videoId=${validoUrl}`;
+                validUrl = document.location.href.split("/")[4];
+                const urlShorts = `https://returnyoutubedislikeapi.com/Votes?videoId=${validUrl}`;
                 try {
                     const respuesta = await fetch(urlShorts);
-                    const datosShort = await respuesta.json();
+                    const dataShort = await respuesta.json();
                     const {
                         dislikes
-                    } = datosShort;
-                    for (var i = 0; i < validoVentanaShort.length; i++) {
-                        validoVentanaShort[i].textContent = `${FormatiarNumero(
+                    } = dataShort;
+                    for (var i = 0; i < validWindowShort.length; i++) {
+                        validWindowShort[i].textContent = `${FormatNumber(
                             dislikes,
                             0
                         )}`;
@@ -856,8 +893,8 @@
             }
         }
 
-        // Mostrar alerta de activar modo oscuro
-        function mostrarAlerta(mensaje) {
+        // Mshow obscure mode alert window
+        function showAlert(message) {
             alert('Active Dark Theme in Youtube page')
             const addButton = document.querySelector(
                 "#below > ytd-watch-metadata > div.container > form"
@@ -866,7 +903,7 @@
             if (!existeAlerta) {
                 if (addButton != undefined) {
                     const modeDark = document.createElement("P");
-                    modeDark.innerHTML = `<h1 class="alerta" style="color: red; background-color: white; border: 2px solid white; text-aling: center; display: flex;  align-items: center; justify-content: center;">${mensaje}</h1>`;
+                    modeDark.innerHTML = `<h1 class="alerta" style="color: red; background-color: white; border: 2px solid white; text-aling: center; display: flex;  align-items: center; justify-content: center;">${message}</h1>`;
                     addButton.appendChild(modeDark);
                     setTimeout(() => {
                         modeDark.remove();
@@ -875,10 +912,10 @@
             }
         }
         // Función para eliminar los posibles anuncios
-        function eliminarAnuancios() {
+        function blockAds() {
             // Skip ads video / saltar publicidad
             const buttonSkip = document.querySelector(".ytp-ad-skip-button.ytp-button");
-            const validar = undefined;
+            const validated = undefined;
             let ytpminiplayerscrim = document.querySelector("ytp-miniplayer-scrim");
             let cross = document.getElementsByClassName("ytp-ad-overlay-close-container")[0];
             let skip = document.getElementsByClassName("ytp-ad-skip-button")[0];
@@ -894,34 +931,34 @@
             const adVideo = document.querySelectorAll(".ad-showing")[0];
             const adTimeVideo = document.querySelector(".ytp-ad-text.ytp-ad-preview-text");
             const video = document.querySelector("video");
-            if (adVideo != validar && video != validar && adTimeVideo != validar) {
+            if (adVideo != validated && video != validated && adTimeVideo != validated) {
                 video.currentTime = video.duration;
             }
-            if (ytpminiplayerscrim != validar) alert("eliminado");
-            if (ad1 != validar) ad1.remove();
-            if (ad2 != validar) ad2.remove();
-            if (ad3 != validar) ad3.remove();
-            if (ad4 != validar) ad4.remove();
-            if (ad5 != validar) ad5.remove();
-            if (ad6 != validar && ad) {
+            if (ytpminiplayerscrim != validated) alert("eliminado");
+            if (ad1 != validated) ad1.remove();
+            if (ad2 != validated) ad2.remove();
+            if (ad3 != validated) ad3.remove();
+            if (ad4 != validated) ad4.remove();
+            if (ad5 != validated) ad5.remove();
+            if (ad6 != validated && ad) {
                 ad6.style.display = "none";
                 ad = false;
             }
-            if (ad7 != validar) ad7.remove();
-            if (ad8 != validar) ad8.remove();
-            if (ad9 != validar) ad9.remove();
-            if (cross != validar) cross.click();
-            if (skip != validar) skip.click();
-            if (buttonSkip != validar) {
+            if (ad7 != validated) ad7.remove();
+            if (ad8 != validated) ad8.remove();
+            if (ad9 != validated) ad9.remove();
+            if (cross != validated) cross.click();
+            if (skip != validated) skip.click();
+            if (buttonSkip != validated) {
                 buttonSkip.click();
             }
         }
 
 
-        // Validar que la url a cambiado por una nueva
-        let prevUrl = undefined; // Sin cambios
+        // Vvalidate url as it changes to a new one
+        let prevUrl = undefined; // no change
         setInterval(() => {
-            // URL changed / Cambio
+            // URL changed
             const currUrl2 = window.location.href;
             const video = document.querySelector("#movie_player > div.html5-video-container > video")
             if (currUrl2 != prevUrl && video != undefined) {
@@ -931,7 +968,7 @@
             }
             const currUrl = window.location.href;
             if (currUrl != prevUrl) {
-                MDCM();
+                Nobody();
                 loadDislikes();
                 setTimeout(() => {
                     shortDislike();
@@ -953,43 +990,43 @@
                 }, 1000)
             }
 
-            const ventanaShortComentarios = document.querySelector("body > ytd-app > ytd-popup-container > tp-yt-paper-dialog > ytd-engagement-panel-section-list-renderer");
-            const historias = document.querySelectorAll("#shorts-inner-container");
-            if (ventanaShortComentarios && historias) {
+            const windowCommentsShort = document.querySelector("body > ytd-app > ytd-popup-container > tp-yt-paper-dialog > ytd-engagement-panel-section-list-renderer");
+            const history = document.querySelectorAll("#shorts-inner-container");
+            if (windowCommentsShort && history) {
                 cleanHTML();
             }
-            eliminarAnuancios();
-        }, 500); // Cada 2 segundos se ejecuta mientras la url cambie
-        eliminarAnuancios();
+            blockAds();
+        }, 500); // runs every 2 seconds as url changes
+        blockAds();
     }
 
 
 
-    // Variables para la traduccion de comentarios
-    let translated; // Texto translated
-    let urlList; // Url lista
-    //TODO: Traducir comentarios
-    async function traductor() {
-        const texto = document.querySelectorAll("#content-text");
+    // Variables for translating comments
+    let translated; // text translated
+    let urlList; // Url list
+    //TODO: Translate button for commentts
+    async function translate() {
+        const text = document.querySelectorAll("#content-text");
         let o = `?client=dict-chrome-ex&sl=auto&tl=${navigator.language}&q=`;
-        for (let i = 0; i < texto.length; i++) {
-            const buttonTraducir = document.createElement("BUTTON");
-            buttonTraducir.classList.add("mdcm");
-            buttonTraducir.textContent = "Traducir";
-            buttonTraducir.style.backgroundColor = "white";
-            buttonTraducir.style.color = "black";
-            buttonTraducir.style.borderRadius = "5px";
-            buttonTraducir.setAttribute("id", `btn${i}`);
-            texto[i].insertAdjacentElement("afterend", buttonTraducir);
-            const mdcm = document.querySelectorAll(`.mdcm`);
-            mdcm[i].onclick = function () {
+        for (let i = 0; i < text.length; i++) {
+            const buttonTranslate = document.createElement("BUTTON");
+            buttonTranslate.classList.add("Nobody");
+            buttonTranslate.textContent = "Translate";
+            buttonTranslate.style.backgroundColor = "white";
+            buttonTranslate.style.color = "black";
+            buttonTranslate.style.borderRadius = "5px";
+            buttonTranslate.setAttribute("id", `btn${i}`);
+            text[i].insertAdjacentElement("afterend", buttonTranslate);
+            const Nobody = document.querySelectorAll(`.Nobody`);
+            Nobody[i].onclick = function () {
                 translated = o;
-                urlList = translated + texto[i].textContent;
+                urlList = translated + text[i].textContent;
                 fetch("https://translate.googleapis.com/translate_a/t" + urlList) //API
                     .then((response) => response.json())
-                    .then((datos) => {
-                        texto[i].textContent = datos[0][0];
-                        mdcm[i].textContent = "Translated";
+                    .then((data) => {
+                        text[i].textContent = data[0][0];
+                        Nobody[i].textContent = "Translated";
                     });
             };
         }
@@ -997,13 +1034,13 @@
 
     // clean buttons de comentarios
     function cleanHTML() {
-        const buttons = document.querySelectorAll(".mdcm");
+        const buttons = document.querySelectorAll(".Nobody");
         [].forEach.call(buttons, function (buttons) {
 
             buttons.remove();
 
         });
-        traductor();
+        translate();
     }
 
     // TODO: mostrar button de traducir en comentarios cuando sean visibles
